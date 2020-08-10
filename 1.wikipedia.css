@@ -1,0 +1,226 @@
+ body {
+     margin: 0px;
+     padding: 0px;
+ }
+
+ #wikicon {
+
+     max-width: 100%;
+     margin: 0 auto;
+     text-align: center;
+     vertical-align: middle;
+ }
+
+ #wikicon p {
+     margin-top: -52px;
+ }
+
+ #wiki2 {
+     width: auto;
+     margin-top: 40px;
+ }
+
+
+ .link1 {
+     position: absolute;
+     left: 26%;
+     top: 26%;
+ }
+
+ .link6 {
+     position: absolute;
+     right: 26%;
+     top: 26%;
+ }
+
+ .link2 {
+     position: absolute;
+     left: 12%;
+     top: 35.5%;
+ }
+
+ .link7 {
+     position: absolute;
+     right: 12%;
+     top: 35.5%;
+ }
+
+ .link3 {
+     position: absolute;
+     left: 8%;
+     top: 47%;
+ }
+
+ .link8 {
+     position: absolute;
+     right: 8%;
+     top: 47%;
+ }
+
+ .link4 {
+     position: absolute;
+     left: 13%;
+     top: 59%;
+ }
+
+ .link9 {
+     position: absolute;
+     right: 13%;
+     top: 59%;
+ }
+
+ .link5 {
+     position: absolute;
+     left: 22%;
+     top: 70%;
+ }
+
+ .link10 {
+     position: absolute;
+     right: 22%;
+     top: 70%;
+ }
+
+ .input-group {
+     width: 75%;
+     margin: 110px auto 0;
+     border: 0.1px solid rgba(0, 0, 0, 0.7);
+ }
+
+
+
+ #container {
+     max-width: 700px;
+     position: relative;
+ }
+
+
+ #read {
+     max-width: 340px;
+     margin: -40px auto 0;
+     border: 1.5px solid #3366CC;
+     font-weight: bold;
+     color: #3366CC;
+ }
+
+ #con {
+     max-width: 1340px;
+     margin: 0 auto;
+ }
+
+ #cont {
+     line-height: 1.5em;
+ }
+
+ #img1,
+ #img2 {
+     max-width: 130px;
+     margin-bottom: 10px;
+ }
+
+ #left2,
+ #left3 {
+     background: #F8F9FA;
+     height: auto;
+     padding-top: 15px;
+ }
+
+
+ #footer {
+     margin-top: 40px;
+ }
+
+ @media(max-width:768px) {
+
+
+     #wikimedia {
+         position: relative;
+         left: 40%;
+         right: 60%;
+     }
+
+     #left1 p {
+         text-align: center;
+     }
+
+     #left2 p {
+         text-align: center;
+     }
+
+     .active {
+         display: none;
+     }
+
+ }
+
+ @media(min-width:768px) {
+     #left3 {
+         display: flex;
+         margin-left: 2px;
+         margin-right: 0px;
+     }
+
+     #imgw {
+         display: flex;
+     }
+
+     .noactive {
+         display: none;
+     }
+
+ }
+
+ @media(max-width:480px) {
+     #cont {
+         max-width: 405px;
+         margin: 0 auto;
+     }
+
+     #wiki1 {
+         width: 40vw;
+     }
+
+     #wiki2 {
+         width: 60px;
+
+         position: absolute;
+         left: 40px;
+         top: 10px;
+     }
+
+     #tfe {
+         margin-bottom: 75%;
+     }
+
+     .input-group {
+         width: 85%;
+     }
+
+     .link1,
+     .link2,
+     .link3,
+     .link4,
+     .link5 {
+
+         position: absolute;
+         width: 50vw;
+         left: 1vw;
+         margin-right: 10px;
+         margin-top: 30px;
+         font-size: 4vw;
+     }
+
+     .link6,
+     .link7,
+     .link8,
+     .link9,
+     .link10 {
+         position: absolute;
+         width: 50vw;
+         right: 1vw;
+         margin-left: 10px;
+         margin-top: 30px;
+         font-size: 4vw;
+
+     }
+ }

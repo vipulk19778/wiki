@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Wikipedia</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="1.wikipedia.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container" id="container">
+
+        <div class="wikipedia-logo container" id="wikicon">
+            <img src="images/wikipedia1.png" width='200' height='150' id="wiki1">
+            <p style="font-size: 15px;font-family: 'Linux Libertine','Georgia';" id="tfe">The Free Encyclopedia </p>
+
+
+            <a href="//en.wikipedia.org/" class="link1"><strong>English</strong><br>
+                <small><bdi dir="ltr">6&nbsp;134&nbsp;000+</bdi> <span>articles</span></small></a>
+            <a href="//es.wikipedia.org/" class="link2"><strong>Español</strong><br>
+                <small><bdi dir="ltr">1&nbsp;615&nbsp;000+</bdi> <span>artículos</span></small></a>
+            <a href="//ru.wikipedia.org/" class="link3"><strong>Русский</strong><br>
+                <small><bdi dir="ltr">1&nbsp;648&nbsp;000+</bdi> <span>статей</span></small></a>
+            <a href="//it.wikipedia.org/" class="link4"><strong>Italiano</strong><br>
+                <small><bdi dir="ltr">1&nbsp;626&nbsp;000+</bdi> <span>voci</span></small></a>
+            <a href="//pt.wikipedia.org/" class="link5"><strong>Português</strong><br>
+                <small><bdi dir="ltr">1&nbsp;041&nbsp;000+</bdi> <span>artigos</span></small></a>
+
+            <img src="images/Wikipedia.png" alt="Wikipedia log was here" id="wiki2">
+
+            <a href="//ja.wikipedia.org/" class="link6"><strong>日本語</strong><br>
+                <small><bdi dir="ltr">1&nbsp;220&nbsp;000+</bdi> <span>記事</span></small></a>
+            <a href="//de.wikipedia.org/" class="link7"><strong>Deutsch</strong><br>
+                <small><bdi dir="ltr">2&nbsp;464&nbsp;000+</bdi> <span>Artikel</span></small></a>
+            <a href="//fr.wikipedia.org/" class="link8"><strong>Français</strong><br>
+                <small><bdi dir="ltr">2&nbsp;239&nbsp;000+</bdi> <span>articles</span></small></a>
+            <a href="//zh.wikipedia.org/" class="link9"><strong>中文</strong><br>
+                <small><bdi dir="ltr">1&nbsp;134&nbsp;000+</bdi> <span data-convert-hans="条目" id="zh_art">條目</span></small></a>
+            <a href="//pl.wikipedia.org/" class="link10"><strong>Polski</strong><br>
+                <small><bdi dir="ltr">1&nbsp;422&nbsp;000+</bdi> <span>haseł</span></small></a>
+
+        </div>
+
+
+        <div class="input-group">
+
+
+            <label for="search" class="sr-only"></label>
+            <input type="text" id="search" placeholder="Search" class="form-control border border-primary">
+
+            <span class="input-group-btn">
+                <select id="searchLanguage" class="form-control" name="language">
+                    <option value="ar" lang="ar">العربية</option><!-- Al-ʿArabīyah -->
+                    <option value="ast" lang="ast">Asturianu</option>
+                    <option value="az" lang="az">Azərbaycanca</option>
+                    <option value="bg" lang="bg">Български</option><!-- Bǎlgarski -->
+                    <option value="nan" lang="nan">Bân-lâm-gú / Hō-ló-oē</option>
+                    <option value="be" lang="be">Беларуская</option><!-- Belaruskaya -->
+                    <option value="ca" lang="ca">Català</option>
+                    <option value="cs" lang="cs">Čeština</option><!-- čeština -->
+                    <option value="cy" lang="cy">Cymraeg</option><!-- Cymraeg -->
+                    <option value="da" lang="da">Dansk</option>
+                    <option value="de" lang="de">Deutsch</option>
+                    <option value="et" lang="et">Eesti</option>
+                    <option value="el" lang="el">Ελληνικά</option><!-- Ellīniká -->
+                    <option value="en" lang="en" selected=selected>English</option><!-- English -->
+                    <option value="es" lang="es">Español</option>
+                    <option value="eo" lang="eo">Esperanto</option>
+                    <option value="eu" lang="eu">Euskara</option>
+                    <option value="fa" lang="fa">فارسی</option><!-- Fārsi -->
+                    <option value="fr" lang="fr">Français</option>
+                    <option value="gl" lang="gl">Galego</option>
+                    <option value="hy" lang="hy">Հայերեն</option><!-- Hayeren -->
+                    <option value="hi" lang="hi">हिन्दी</option><!-- Hindī -->
+                    <option value="hr" lang="hr">Hrvatski</option>
+                    <option value="id" lang="id">Bahasa Indonesia</option>
+                    <option value="it" lang="it">Italiano</option>
+                    <option value="he" lang="he">עברית</option><!-- ʿIvrit -->
+                    <option value="ka" lang="ka">ქართული</option><!-- Kartuli -->
+                    <option value="la" lang="la">Latina</option>
+                    <option value="lv" lang="lv">Latviešu</option>
+                    <option value="lt" lang="lt">Lietuvių</option>
+                    <option value="hu" lang="hu">Magyar</option>
+                    <option value="mk" lang="mk">Македонски</option><!-- Makedonski -->
+                    <option value="arz" lang="arz">مصرى</option><!-- Maṣrī -->
+                    <option value="ms" lang="ms">Bahasa Melayu</option>
+                    <option value="min" lang="min">Bahaso Minangkabau</option>
+                    <option value="nl" lang="nl">Nederlands</option>
+                    <option value="ja" lang="ja">日本語</option><!-- Nihongo -->
+                    <option value="no" lang="nb">Norsk (bokmål)</option>
+                    <option value="nn" lang="nn">Norsk (nynorsk)</option>
+                    <option value="ce" lang="ce">Нохчийн</option><!-- Noxçiyn -->
+                    <option value="uz" lang="uz">Oʻzbekcha / Ўзбекча</option>
+                    <option value="pl" lang="pl">Polski</option>
+                    <option value="pt" lang="pt">Português</option>
+                    <option value="kk" lang="kk">Қазақша / Qazaqşa / قازاقشا</option>
+                    <option value="ro" lang="ro">Română</option>
+                    <option value="ru" lang="ru">Русский</option><!-- Russkiy -->
+                    <option value="simple" lang="en">Simple English</option>
+                    <option value="ceb" lang="ceb">Sinugboanong Binisaya</option>
+                    <option value="sk" lang="sk">Slovenčina</option>
+                    <option value="sl" lang="sl">Slovenščina</option>
+                    <option value="sr" lang="sr">Српски / Srpski</option>
+                    <option value="sh" lang="sh">Srpskohrvatski / Српскохрватски</option>
+                    <option value="fi" lang="fi">Suomi</option><!-- suomi -->
+                    <option value="sv" lang="sv">Svenska</option>
+                    <option value="ta" lang="ta">தமிழ்</option><!-- Tamiḻ -->
+                    <option value="tt" lang="tt">Татарча / Tatarça</option>
+                    <option value="th" lang="th">ภาษาไทย</option><!-- Phasa Thai -->
+                    <option value="tg" lang="tg">Тоҷикӣ</option><!-- Tojikī -->
+                    <option value="azb" lang="azb">تۆرکجه</option><!-- Türkce -->
+                    <option value="tr" lang="tr">Türkçe</option><!-- Türkçe -->
+                    <option value="uk" lang="uk">Українська</option><!-- Ukrayins’ka -->
+                    <option value="ur" lang="ur">اردو</option><!-- Urdu -->
+                    <option value="vi" lang="vi">Tiếng Việt</option>
+                    <option value="vo" lang="vo">Volapük</option>
+                    <option value="war" lang="war">Winaray</option>
+                    <option value="zh" lang="zh">中文</option><!-- Zhōngwén -->
+                    <option value="ko" lang="ko">한국어</option><!-- Hangugeo -->
+                </select>
+                <button type="submit" class="btn btn-primary glyphicon glyphicon-search form-control-feedback"></button></span>
+        </div>
+
+
+    </div>
+
+    <div>
+        <br><br><br>
+        <hr style="max-width:80%;border: 0.5px solid #C8CCD1;">
+
+        <select class="form-control" id="read">
+
+            <option>Read Wikipedia in your language.</option>
+
+        </select>
+
+    </div>
+    <br>
+    <hr style="border-bottom: 1px solid #C8CCD1;width:96%;margin-bottom: 40px;">
+
+    <div class="container-fluid" id="con">
+        <div class="row">
+
+            <div class="col-lg-3 col-sm-4" id="left1">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-4 col-xs-12">
+
+                        <img src="images/w15.png" width="70px" style="float: left;margin-right: 10px;margin-bottom: 5px;" id="wikimedia">
+                    </div>
+
+                    <div class="col-lg-9 col-sm-8 col-xs-12">
+                        <p style="font-size: 12px;text-align: justify-all;margin-bottom: 30px;">Wikipedia is hosted by the <a href="//wikimediafoundation.org/">Wikimedia Foundation</a>, a non-profit organization that also hosts a range of other projects.</p>
+
+                    </div>
+
+                    <div class="container-fluid row active" id="left3">
+                        <div class="col-sm-4 col-lg-3">
+                            <center>
+                                <img src="images/w.png" width="30px" class="rounded" style="float: center;text-align: center;background: #FFFFFF;box-shadow: 0 0px 1px 0px #000;border-radius: 2px;" id="imgw">
+                                <a href="https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications">Download Wikipedia for Android or iOS</a>
+                            </center>
+                        </div>
+                        <div class="col-sm-8 col-lg-9">
+
+                            <p style="font-size: 12px;margin: 20px 2px 15px;display: flex;text-align: justify-all;" id="wp">Save your favorite articles to read offline, sync your reding lists across devices and customize your reading experience with the official Wikipedia app.</p>
+
+                            <center>
+                                <a href="https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" id="img1"></a>&nbsp;
+                                <a href="https://apps.apple.com/app/apple-store/id324715238" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Available_on_the_App_Store_%28black%29.png" id="img2"></a>
+                            </center>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="col-lg-9 col-sm-8" id="cont">
+
+                <div class="col">
+                    <div class="row-lg-3" style="margin-bottom:30px;">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-4 col-xs-4">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <img src="images/w9.png" width="30px" style="float: left;margin-right: 10px;">
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <a href="//commons.wikimedia.org/">Commons</a>
+                                        <p style="font-size: 12px;display:flex;">Free usable photos and more</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 col-xs-4">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <img src="images/w11.png" width="40px" style="float: left;margin-right: 10px;">
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <a href="//www.wikivoyage.org/">Wikivoyage</a>
+                                        <p style="font-size: 12px;display:flex;">Free travel guide</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 col-xs-4">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <img src="images/w16.png" width="40px" style="float: left;margin-right: 10px;">
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <a href="//www.wiktionary.org/">Wiktionary</a>
+                                        <p style="font-size: 12px;display:flex;">Free dictionary</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-lg-3" style="margin-bottom:30px;">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-4 col-xs-4">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <img src="images/w3.png" width="40px" style="float: left;margin-right: 10px;">
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <a href="www.wikibooks.org/">Wikibooks</a>
+                                        <p style="font-size: 12px;display:flex;">Free textbooks</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 col-xs-4">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <img src="images/w5.png" width="52px" style="float: left;margin-right: 10px;">
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <a href="//www.wikinews.org/">Wikinews</a>
+                                        <p style="font-size: 12px;display:flex;">Free news source</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 col-xs-4">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <img src="images/w10.png" width="50px" height="35" style="float: left;margin-right: 10px;">
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <a href="//www.wikidata.org/">Wikidata</a>
+                                        <p style="font-size: 12px;display:flex;">Free knowledge base</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-lg-3" style="margin-bottom:30px;">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-4 col-xs-4">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <img src="images/w6.png" width="40px" style="float: left;margin-right: 10px;">
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <a href="//www.wikiversity.org/">Wikiversity</a>
+                                        <p style="font-size: 12px;display:flex;">Free course materials</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 col-xs-4">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <img src="images/w2.png" width="35px" style="float: left;margin-right: 10px;">
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <a href="//www.wikiquote.org/">Wikiquote</a>
+                                        <p style="font-size: 12px;display:flex;">Free quote compendium</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 col-xs-4">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <img src="images/w8.png" width="45px" style="float: left;margin-right: 10px;">
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <a href="//www.mediawiki.org/">MediaWiki</a>
+                                        <p style="font-size: 12px;display: flex;">Free and open wiki application</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-lg-3" style="margin-bottom:30px;">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-4 col-xs-4">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <img src="images/w4.png" width="35px" style="float: left;margin-right: 10px;">
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <a href="//www.wikisource.org/">Wikisource</a>
+                                        <p style="font-size: 12px;display: flex;">Free library</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 col-xs-4">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <img src="images/w7.png" width="40px" style="float: left;margin-right: 10px;">
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <a href="//species.wikimedia.org/">Wikispecies</a>
+                                        <p style="font-size: 12px;display: flex;">Free species directory</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 col-xs-4">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <img src="images/w14.png" width="60px" style="float: left;margin-right: 10px;">
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <a href="//meta.wikimedia.org/">Meta-Wiki</a>
+                                        <p style="font-size: 12px;display: flex;">Community coordination and documentation</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="container-fluid noactive" id="left2">
+        <div>
+            <center>
+                <img src="images/w.png" width="30px" class="rounded" style="float: center;text-align: center;background: #FFFFFF;box-shadow: 0 0px 1px 0px #000;border-radius: 2px;" id="imgw">
+                <a href="https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications">Download Wikipedia for Android or iOS</a>
+            </center>
+        </div>
+        <div class="col-sm-8 col-lg-9">
+
+            <p style="font-size: 12px;margin: 20px 2px 15px;display: flex;text-align: justify-all;" id="wp">Save your favorite articles to read offline, sync your reding lists across devices and customize your reading experience with the official Wikipedia app.</p>
+
+            <center>
+                <a href="https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" id="img1"></a>&nbsp;
+                <a href="https://apps.apple.com/app/apple-store/id324715238" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Available_on_the_App_Store_%28black%29.png" id="img2"></a>
+            </center>
+        </div>
+
+    </div>
+
+    <div class="footer container">
+
+        <div id="footer">
+
+            <p style="float: left;font-size: 12px;text-align: center;">This page is available under the <a href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlilke License</a>&nbsp;&nbsp;&bull;&nbsp;
+                <a href="https://meta.wikimedia.org/wiki/Terms_of_use">Terms of use</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://meta.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>
+            </p>
+
+        </div>
+    </div>
+
+
+
+</body></html>
